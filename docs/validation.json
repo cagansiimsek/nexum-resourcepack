@@ -1,0 +1,2442 @@
+{
+  "status": "PASS",
+  "validation": "static only; Minecraft client not launched",
+  "version": "2.0.0",
+  "zip": "SkyGrind-Combined-Assets-1.21.4-1.21.11-v2.0.0.zip",
+  "zip_files": 330,
+  "zip_bytes": 283853,
+  "zip_sha1": "f69d80bbc332d23badcb7a276d8082b976483ade",
+  "zip_sha256": "ad4463dbe300fa14a3f217cdcf12c03bba77afc2eb5f0895d0130c859b7686a0",
+  "metadata": {
+    "description": "SkyGrind Combined Assets v2.0.0 | Java 1.21.4\u20131.21.11 | items, workstations, relics",
+    "pack_format": 46,
+    "supported_formats": [
+      46,
+      75
+    ],
+    "min_format": [
+      46,
+      0
+    ],
+    "max_format": [
+      75,
+      0
+    ]
+  },
+  "model_keys": 109,
+  "keys_by_source": {
+    "armourers_forge (new)": [
+      "armourers_forge"
+    ],
+    "boss relics v0.2.0": [
+      "blighted_vessel",
+      "crown_of_exile",
+      "molten_core",
+      "verdant_heart"
+    ],
+    "combined v1.0.0": [
+      "artisan_bread",
+      "bakers_table",
+      "caravan_silk",
+      "masons_bench",
+      "reinforced_cobblestone",
+      "weavers_loom"
+    ],
+    "sprite (new)": [
+      "advanced_grip",
+      "ancient_timber",
+      "armour_lining",
+      "armour_plate_t1",
+      "armour_plate_t2",
+      "armour_plate_t3",
+      "armour_plate_t4",
+      "armour_t1_boots",
+      "armour_t1_chestplate",
+      "armour_t1_helmet",
+      "armour_t1_leggings",
+      "armour_t2_boots",
+      "armour_t2_chestplate",
+      "armour_t2_helmet",
+      "armour_t2_leggings",
+      "armour_t3_boots",
+      "armour_t3_chestplate",
+      "armour_t3_helmet",
+      "armour_t3_leggings",
+      "armour_t4_boots",
+      "armour_t4_chestplate",
+      "armour_t4_helmet",
+      "armour_t4_leggings",
+      "ash_core",
+      "blighted_bone",
+      "carrot_broth",
+      "cindered_skull",
+      "coal_briquette",
+      "conductive_assembly",
+      "copper_components",
+      "copper_fittings",
+      "copper_sword",
+      "crownmeal",
+      "crownpetal",
+      "duskshade",
+      "embercap",
+      "embercap_meal",
+      "exiled_sovereign_egg",
+      "feathered_crest",
+      "field_bandage",
+      "fieldmint",
+      "flour",
+      "foraging_sickle",
+      "forest_t1_birch_logs",
+      "forest_t1_oak_logs",
+      "forest_t2_mangrove_logs",
+      "forest_t2_oak_logs",
+      "forest_t2_spruce_logs",
+      "forest_t3_oak_logs",
+      "forest_t3_spruce_logs",
+      "forest_t4_dark_oak_logs",
+      "forest_t4_oak_logs",
+      "forest_t4_pale_oak_logs",
+      "forestry_axe",
+      "gemmed_core",
+      "gilded_fittings",
+      "gilded_sword",
+      "hardened_grip",
+      "hardened_timber",
+      "heartroot",
+      "heartroot_wrap",
+      "hearty_stew",
+      "iron_fittings",
+      "iron_sword",
+      "ironbloom",
+      "ironbloom_meal",
+      "marsh_reed",
+      "mining_pickaxe",
+      "minion_farming",
+      "minion_forestry",
+      "minion_mining",
+      "minion_slaying",
+      "molten_residue",
+      "obsidian_colossus_egg",
+      "pasture_guardian_egg",
+      "pasture_hide",
+      "pasture_tusk",
+      "plague_ichor",
+      "plaguebringer_egg",
+      "provision_pack",
+      "reinforced_cloth",
+      "reinforced_components",
+      "reinforced_frame",
+      "seasoned_timber",
+      "shulker_carapace",
+      "sovereign_grip",
+      "sovereign_sword",
+      "treated_timber",
+      "void_shard",
+      "warding_wrap",
+      "weapon_grip",
+      "webbed_heart",
+      "wild_fiber",
+      "wooden_framework",
+      "woven_cloth"
+    ],
+    "workstations phase 2 v0.1.0": [
+      "carpenters_bench",
+      "smiths_forge",
+      "summoners_altar"
+    ]
+  },
+  "armourer_geometry": {
+    "elements": 31,
+    "connected_cuboids": 31,
+    "visible_coplanar_overlaps": 0,
+    "contact_check": "transformed AABB adjacency (not an exact rotated-solid intersection test)",
+    "coplanar_check": "exposed axis-aligned faces; additional transformed polygon check recorded separately"
+  },
+  "sprites": {
+    "forest_t1_oak_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "ca672b74e506e88abcce30f6c15548b9f0e7dff1972ae5dcc0246fc538199308"
+    },
+    "forest_t1_birch_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "52cb429cf925106d90ddec071b6afd3d866de81a85bfb0c8514d7b34ce2d36bf"
+    },
+    "forest_t2_oak_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 14,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "e3fe0b06d2d1e9411f0345606c2ea7475aeacb6fc91305eae0c43e90fdc7a8d9"
+    },
+    "forest_t2_mangrove_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "b089f102b9fd7953023cac971c90930d193d4c284db8033816fca9171cba8569"
+    },
+    "forest_t2_spruce_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "16c3ef24119d5e3195637ce8b64405c9c150506cff1548c83f91eadf84ce2875"
+    },
+    "forest_t3_oak_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "10f156e3fec4adf686a6c5b7d785d740d55184e4150317c16d5ab0d4f3dc4109"
+    },
+    "forest_t3_spruce_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "7b48151f828f3d3eaaa939b535b02541e1fdd8b8a97edfe698f7111c9dabfb9d"
+    },
+    "forest_t4_oak_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "ae527b3ef677786ffe45bd5aea1c063cd9516d7e6baf470e862c3ba4f626fd09"
+    },
+    "forest_t4_dark_oak_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "370af02a0e0d23da3eddeec23cabb39d531a4181df8b3255076828c6b27a97ce"
+    },
+    "forest_t4_pale_oak_logs": {
+      "group": "forestry",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        30,
+        30
+      ],
+      "sha256": "2636bb0c623a0d03cf5e0c8478e430123ae32cd4928a9382d16edb8c8876afdf"
+    },
+    "fieldmint": {
+      "group": "herbs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 10,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        1,
+        28,
+        31
+      ],
+      "sha256": "271d3f5e67531a139f061eca95b166955e5d46513d7e6e6d6a5608d24b8f978b"
+    },
+    "wild_fiber": {
+      "group": "herbs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 14,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        1,
+        28,
+        30
+      ],
+      "sha256": "d19a5461f520de39f8808d1defa361a396400005bf52e0fe38ec8d72caa927be"
+    },
+    "heartroot": {
+      "group": "herbs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        5,
+        1,
+        26,
+        31
+      ],
+      "sha256": "679739d9e647c45699a0e47a00f77a56d14bb2ef812de46425c05a17470a34cf"
+    },
+    "marsh_reed": {
+      "group": "herbs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 14,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        1,
+        29,
+        31
+      ],
+      "sha256": "9f4bf9361c173a5c08dd9c1d6ea84d36e23b3b75c7586ff7e3c0e419bc5adff4"
+    },
+    "ironbloom": {
+      "group": "herbs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        2,
+        26,
+        29
+      ],
+      "sha256": "0bceca917df26e0e9c557d8ee9e3998eb8a543fd2892d2daba2013b5cda82dfb"
+    },
+    "embercap": {
+      "group": "herbs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        29,
+        29
+      ],
+      "sha256": "6ad010588e1a7d3dff86c74db914526741866c1561921bfd47135fce17b52950"
+    },
+    "crownpetal": {
+      "group": "herbs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        5,
+        2,
+        26,
+        30
+      ],
+      "sha256": "30693faae53ee22d6e603e16afff07c046ae4aee922268bc872f7c85a020fa88"
+    },
+    "duskshade": {
+      "group": "herbs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        3,
+        30,
+        29
+      ],
+      "sha256": "490c42c9d99245d3fffda95422b0c150f4537f3ecd463fc1dc72c61cc59e00d7"
+    },
+    "feathered_crest": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        1,
+        29,
+        30
+      ],
+      "sha256": "c4ce4e4ed80536ab458a873e5dd722922c590824999204d5ed76736c9b75f239"
+    },
+    "pasture_tusk": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        1,
+        28,
+        31
+      ],
+      "sha256": "22cb1bd877f84363a46adeca7e2fc79870c1550984976cd7390f072632a3e070"
+    },
+    "pasture_hide": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 10,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        4,
+        27,
+        27
+      ],
+      "sha256": "21fd4c6c7c03c1fbbc776911880abac53c0a7089dd30f2089950dbb90188e413"
+    },
+    "plague_ichor": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        2,
+        25,
+        30
+      ],
+      "sha256": "5fc950286972a6143267cfd5c30fab341ef92fe5ca62754a54a1ce380c1a745b"
+    },
+    "blighted_bone": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        28,
+        28
+      ],
+      "sha256": "bf15feeda05288501f2e0e2653c061cb2d19b7f99e97e840c4d8ba48747aeed0"
+    },
+    "webbed_heart": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 12,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        28,
+        28
+      ],
+      "sha256": "feec7a4dede9149237a9c485b5db4d1fe3542dd129d56e6aeb26b6e1a7671021"
+    },
+    "ash_core": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 13,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        4,
+        27,
+        27
+      ],
+      "sha256": "0fd8cba0939a5f730798d71c248bb75ec9c6d6a68424e9129adedf9274e09e6f"
+    },
+    "molten_residue": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 11,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        3,
+        29,
+        29
+      ],
+      "sha256": "b29a4cb6572cdbf4591f98c5b37d3a7df6122c0b43e5142675aee6aa5c901c88"
+    },
+    "cindered_skull": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 13,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        3,
+        27,
+        29
+      ],
+      "sha256": "96cf0456e4a9e06c408f2e506d2fae81e701930f66f8f79ec692609d43e3c789"
+    },
+    "void_shard": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 8,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        1,
+        27,
+        31
+      ],
+      "sha256": "6b0f02d40cb4386f6abf5aba01b76d72a3a906db83fd4412ce676ed7ad1e23b4"
+    },
+    "shulker_carapace": {
+      "group": "drops",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 10,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        5,
+        29,
+        27
+      ],
+      "sha256": "bdf2508d701fd5804e1052773b63fe20e83810f1e77a4a9b20d32464a0555a44"
+    },
+    "pasture_guardian_egg": {
+      "group": "eggs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 12,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        1,
+        25,
+        30
+      ],
+      "sha256": "0258751f7bad273fb1fa5bdb484912f905bc01b43e6bec8d0d1739b3f9b86e48"
+    },
+    "plaguebringer_egg": {
+      "group": "eggs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 12,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        1,
+        25,
+        30
+      ],
+      "sha256": "b5d478c85675e61346a6165e1ab9f223cbddf6ff1b0cbabe23e10964722d518d"
+    },
+    "obsidian_colossus_egg": {
+      "group": "eggs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 13,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        1,
+        25,
+        30
+      ],
+      "sha256": "f11ad86cb8993338a483264aa6da48ea2f043f7269f71be8addbc259573579af"
+    },
+    "exiled_sovereign_egg": {
+      "group": "eggs",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        1,
+        25,
+        30
+      ],
+      "sha256": "f9f5c898791408ece419778b832fe1b3e7a17b1f9f2fc6d594a883da5a66c89a"
+    },
+    "minion_farming": {
+      "group": "automatons",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        31
+      ],
+      "sha256": "9e00881bb1a25ba36d7b527035f32aa431c90dbc34138bed61f3ac39dca0f466"
+    },
+    "minion_mining": {
+      "group": "automatons",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        31
+      ],
+      "sha256": "4ed420c62ba01622aaea7253ec46952fb0b880aa4047373377f8acecd512ef7d"
+    },
+    "minion_forestry": {
+      "group": "automatons",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        31,
+        31
+      ],
+      "sha256": "384df5fbe38e3b08d2e38629fb7e72d1ee1d0eb6cef03e96547a963e2f329da4"
+    },
+    "minion_slaying": {
+      "group": "automatons",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        31
+      ],
+      "sha256": "1973c334b7df36c1cce1b62a29258c9754f02938138264dccecf0c3adab41991"
+    },
+    "mining_pickaxe": {
+      "group": "tools",
+      "parent": "minecraft:item/handheld",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        3,
+        30,
+        29
+      ],
+      "sha256": "134e18e34f5c25a129cbb439d7a754b8051b0fc3d8f02be54d4765d5569bb3e7"
+    },
+    "forestry_axe": {
+      "group": "tools",
+      "parent": "minecraft:item/handheld",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        1,
+        27,
+        31
+      ],
+      "sha256": "a739e918f1a7bb31d7a0af5899bfdbec70cdf226eba53823bda25b8f29114b7e"
+    },
+    "foraging_sickle": {
+      "group": "tools",
+      "parent": "minecraft:item/handheld",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        1,
+        27,
+        31
+      ],
+      "sha256": "5cdd59b739ccd08b54c34b3b76bbacdee94d5e354a8bb27809d2e4ff30bf393b"
+    },
+    "flour": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        1,
+        28,
+        31
+      ],
+      "sha256": "71cd5b502adfc3c352fca1f51e557dc84281e60abe51579ee694a3963eec566c"
+    },
+    "iron_fittings": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 8,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        4,
+        28,
+        27
+      ],
+      "sha256": "b58d2d1fa126f5d8b0801d132a0d13ab7bc27af55fc18e5816951cf4e4366cf0"
+    },
+    "reinforced_components": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "sha256": "357def9f2d0c8919a6639eb0143699c231ab84ecfdb2255ce134a06244f5cdc2"
+    },
+    "treated_timber": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 11,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "f9925d793ae5cb8c6ca2d565e91438c616242e401707b33f8cbb809f989b049a"
+    },
+    "wooden_framework": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 7,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        29,
+        29
+      ],
+      "sha256": "bffeba806e2ab57d76221bbf726dbdbf9daeda9c4e4e71df86b7b721e59fd699"
+    },
+    "copper_fittings": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 8,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        4,
+        28,
+        27
+      ],
+      "sha256": "911ab91a2adc2b81abf58f8c24ce064b231b472147a2db36ab74feaaa389aa10"
+    },
+    "copper_components": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "sha256": "e894a999893e4347849548ab5f3e8f6f426383e08ca6cd5c53c855934c4f9cdd"
+    },
+    "provision_pack": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        2,
+        28,
+        30
+      ],
+      "sha256": "e55be5ebe67eb89d0beb56f0ad64955f5bb1db166e055ab603409b9f5749562a"
+    },
+    "coal_briquette": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        6,
+        28,
+        26
+      ],
+      "sha256": "d816f1bbdd7ce59d40c9b84dd9e3ea15a75fae4ad50e23f1c4ee6bc7fbd4d835"
+    },
+    "gilded_fittings": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 8,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        4,
+        28,
+        27
+      ],
+      "sha256": "30f172584592faa6c2d2474d596d54b90442ec43dc27b0a10e5b8e2caf6a5d62"
+    },
+    "conductive_assembly": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "sha256": "f0d808da5cd220ef0282e0370af912f9f02d18e149fc2404da2db3432be143f1"
+    },
+    "gemmed_core": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        28,
+        28
+      ],
+      "sha256": "644ad47b83ebd4a22713885c0d246b3d4d5aa11a12c2018f75796a502441acc3"
+    },
+    "armour_plate_t1": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 13,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        2,
+        28,
+        29
+      ],
+      "sha256": "9790d08c7fa18e0fb29c0ec46603207f70fd30dbf973149aeeaf300f96cb03fa"
+    },
+    "armour_plate_t2": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 13,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        2,
+        28,
+        29
+      ],
+      "sha256": "deb0179b4cef77903826a5c1b8b66180497f2ce0c02be063835cb2b8486ae4b0"
+    },
+    "armour_plate_t3": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 13,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        2,
+        28,
+        29
+      ],
+      "sha256": "1f01650c22eb767a2c71fed2679e4ab620730fc30132a8a5baf94830e2efc21c"
+    },
+    "armour_plate_t4": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 13,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        2,
+        28,
+        29
+      ],
+      "sha256": "4022431e7abd8ee1580bbbdcbb1b9694ababae84dfdd862c6bfdd880993ecfe7"
+    },
+    "reinforced_frame": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 13,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        29,
+        29
+      ],
+      "sha256": "fb11fc6d90386ea82d11e2eef28aeba0ccbb0b59281c9aa9a17db748d2f034c0"
+    },
+    "seasoned_timber": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "8d57db327f188ebaf28f76dc3dcfab80b0031000aa40e63c18a3c5e20ff3b360"
+    },
+    "hardened_timber": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 11,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "77ff3a64a756267cd7a07c4123a0c0a1ee8b326b25bceedbcf55895bfa1a66b7"
+    },
+    "ancient_timber": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 12,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "cfe42842b82fae1ac465ca45458de28f5761088803ec7d623a3debc6ba47b112"
+    },
+    "weapon_grip": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        4,
+        28,
+        28
+      ],
+      "sha256": "9740c6d6f68c95814344a2086aa3120aa1ac5d8b920f0df5386a873a33855c2f"
+    },
+    "advanced_grip": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        4,
+        28,
+        28
+      ],
+      "sha256": "db71a67451aa541d55abc6ed0e4e06e92c0c31b3f04d8816a0f074a12ce8268b"
+    },
+    "hardened_grip": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        4,
+        28,
+        28
+      ],
+      "sha256": "b3936ef1b4732aebe30da11a6bbeed9f13fb24f7abf902d9badf020309b3620d"
+    },
+    "sovereign_grip": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        4,
+        28,
+        28
+      ],
+      "sha256": "41e906cac2d113ca541c8e6afbcccb2004105fa0cc954f5b9e6290d3a310506d"
+    },
+    "woven_cloth": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 7,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        28,
+        28
+      ],
+      "sha256": "11f20e7aae6311c6347a734a7afe93e419aa84779a2a0efbcdabd4fb3037be0a"
+    },
+    "reinforced_cloth": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 10,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        28,
+        28
+      ],
+      "sha256": "3e3db0988e275d7bc0749c968a3985e21271cd961827cc96b201e5cb5af2a60b"
+    },
+    "armour_lining": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 7,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        28,
+        28
+      ],
+      "sha256": "55ad14482f23579bb4916d21b251f82602219219e7be82a50efed73c42e9b263"
+    },
+    "field_bandage": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        4,
+        29,
+        27
+      ],
+      "sha256": "ef26d557c6efd0e98492631a53b58245d40a6a92b2aaeec7897b16ce9564ef78"
+    },
+    "heartroot_wrap": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "sha256": "b9040f1339e6883bee13a992a7715a446195fc08da7df5bee9428486cde3a1c3"
+    },
+    "warding_wrap": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 11,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        4,
+        29,
+        27
+      ],
+      "sha256": "be25e3f0f4ad77137073f4142657ce0cbf335a1f911eed4b0eb8a7804349dec2"
+    },
+    "carrot_broth": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        29,
+        28
+      ],
+      "sha256": "fe4616d7d82033564f76fcfcd7179f0d452a3596fb0da03c8034d2a6d45921b4"
+    },
+    "hearty_stew": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        29,
+        28
+      ],
+      "sha256": "1053945b468f4c59559fd21eef8ed27ff7a723e320f40510ddc9f03fc1c91c43"
+    },
+    "ironbloom_meal": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        6,
+        29,
+        25
+      ],
+      "sha256": "696c15a49adf3d2fb0143026bc4cb49d6b6371c60acca5673cd4c04e9eca2ddb"
+    },
+    "embercap_meal": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        29,
+        28
+      ],
+      "sha256": "8eaf1832cd3c1595a7516093aefe1a6a9be0815fbc2f316c14f5c60dc5e5aa26"
+    },
+    "crownmeal": {
+      "group": "parts",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        3,
+        29,
+        28
+      ],
+      "sha256": "61c94d6f7f072910bba1dc96c8a9febaa1c6f7f15ba9a6da0e3fe3162faabcb3"
+    },
+    "armour_t1_helmet": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 11,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        6,
+        27,
+        26
+      ],
+      "sha256": "90d98d289254f59f3f4721d94aef07f56481d361693b689da8100730b5aafa98"
+    },
+    "armour_t1_chestplate": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        4,
+        29,
+        27
+      ],
+      "sha256": "71864955b9e33b3f6cd230ef14e05024403076ff66578f9417ef67e572f97772"
+    },
+    "armour_t1_leggings": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 10,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        3,
+        26,
+        29
+      ],
+      "sha256": "5333960f8cbfd43040f109a485a29d9b860c212a075905ada33f2084a538c72e"
+    },
+    "armour_t1_boots": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        6,
+        29,
+        25
+      ],
+      "sha256": "f9e9d9fb9dd3ae5b97a48adbe8a6cc78043ce69118c0cbea7f1ce3a4fa09655d"
+    },
+    "armour_t2_helmet": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 11,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        6,
+        27,
+        26
+      ],
+      "sha256": "fa8b1dec72eda31d9aaf28149a57c478bebd7f589d0488bb9110d8fe98c69ac9"
+    },
+    "armour_t2_chestplate": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        4,
+        29,
+        27
+      ],
+      "sha256": "ce2fec48af63826344936c4c2aae70827464bfda9c6119f07fa8de809cf523a1"
+    },
+    "armour_t2_leggings": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 10,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        3,
+        26,
+        29
+      ],
+      "sha256": "063562c512ebe4f3acc82deebde3e35869d0881e16b0ea0918d4d1440af78fa2"
+    },
+    "armour_t2_boots": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        6,
+        29,
+        25
+      ],
+      "sha256": "f78937f1e5e7ab1555c92218c70a7bcf5cf5edbbe958c5119e09589a92cff4b8"
+    },
+    "armour_t3_helmet": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 11,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        6,
+        27,
+        26
+      ],
+      "sha256": "5fe624c13010ae6270d8e4ec5deedcbcade96b1bed33b61da3727ce40e0ad2dd"
+    },
+    "armour_t3_chestplate": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        4,
+        29,
+        27
+      ],
+      "sha256": "7a9a5308041037f66cfeb2c1cca2f07563236cbf687fc2d9b269a69a12125ecc"
+    },
+    "armour_t3_leggings": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 10,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        3,
+        26,
+        29
+      ],
+      "sha256": "697a0c9dab551eaad36eba0e9e4237b1d5a8da983ad26775086f225b3626f8c2"
+    },
+    "armour_t3_boots": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        6,
+        29,
+        25
+      ],
+      "sha256": "aa979fa4aa4685f828947cce7a1a6000f5a5e983a79eb8fd877760a41e0fffed"
+    },
+    "armour_t4_helmet": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 11,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        4,
+        6,
+        27,
+        26
+      ],
+      "sha256": "80be138992f7c1a9e3cd45162d1159585260f7365d6ac393cadd3fcb749b18f4"
+    },
+    "armour_t4_chestplate": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        2,
+        4,
+        29,
+        27
+      ],
+      "sha256": "ae2d268d7d56ccf867e941f978dc0b2318e6809d71319098620a9519788412ab"
+    },
+    "armour_t4_leggings": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 10,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        6,
+        3,
+        26,
+        29
+      ],
+      "sha256": "1238a8a0e1375034b247f8dcd0582e0644a8fa832716e8fb495f7b312f674704"
+    },
+    "armour_t4_boots": {
+      "group": "gear",
+      "parent": "minecraft:item/generated",
+      "opaque_colours": 9,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        3,
+        6,
+        29,
+        25
+      ],
+      "sha256": "209c50380a8a40a457c38d5339210a2b12ee4fff97e2cccde96e3b22cc86ca45"
+    },
+    "copper_sword": {
+      "group": "gear",
+      "parent": "minecraft:item/handheld",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "9519881f3acffd302f1ab1f595e56f88b496be328f4e255ab7caa2c2ccdec44b"
+    },
+    "iron_sword": {
+      "group": "gear",
+      "parent": "minecraft:item/handheld",
+      "opaque_colours": 15,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "43ba35471ecf8eed36b130aed07894cff017f5f6e627db62881a9b5bdd3d5d1b"
+    },
+    "gilded_sword": {
+      "group": "gear",
+      "parent": "minecraft:item/handheld",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "062c2cd8d9eb4498ed375e2197e98af97cb0e98851e868011be76e38492ed6da"
+    },
+    "sovereign_sword": {
+      "group": "gear",
+      "parent": "minecraft:item/handheld",
+      "opaque_colours": 16,
+      "alpha": [
+        0,
+        255
+      ],
+      "bounds": [
+        1,
+        1,
+        30,
+        30
+      ],
+      "sha256": "57d99f3d1135789ce15715cbf8e087c02f020b286252964663adaf29ed954578"
+    }
+  },
+  "chains": {
+    "advanced_grip": {
+      "model": "assets/grindcore/models/item/advanced_grip.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/advanced_grip.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "ancient_timber": {
+      "model": "assets/grindcore/models/item/ancient_timber.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/ancient_timber.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_lining": {
+      "model": "assets/grindcore/models/item/armour_lining.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/armour_lining.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_plate_t1": {
+      "model": "assets/grindcore/models/item/armour_plate_t1.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/armour_plate_t1.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_plate_t2": {
+      "model": "assets/grindcore/models/item/armour_plate_t2.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/armour_plate_t2.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_plate_t3": {
+      "model": "assets/grindcore/models/item/armour_plate_t3.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/armour_plate_t3.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_plate_t4": {
+      "model": "assets/grindcore/models/item/armour_plate_t4.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/armour_plate_t4.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t1_boots": {
+      "model": "assets/grindcore/models/item/armour_t1_boots.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t1_boots.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t1_chestplate": {
+      "model": "assets/grindcore/models/item/armour_t1_chestplate.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t1_chestplate.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t1_helmet": {
+      "model": "assets/grindcore/models/item/armour_t1_helmet.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t1_helmet.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t1_leggings": {
+      "model": "assets/grindcore/models/item/armour_t1_leggings.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t1_leggings.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t2_boots": {
+      "model": "assets/grindcore/models/item/armour_t2_boots.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t2_boots.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t2_chestplate": {
+      "model": "assets/grindcore/models/item/armour_t2_chestplate.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t2_chestplate.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t2_helmet": {
+      "model": "assets/grindcore/models/item/armour_t2_helmet.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t2_helmet.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t2_leggings": {
+      "model": "assets/grindcore/models/item/armour_t2_leggings.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t2_leggings.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t3_boots": {
+      "model": "assets/grindcore/models/item/armour_t3_boots.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t3_boots.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t3_chestplate": {
+      "model": "assets/grindcore/models/item/armour_t3_chestplate.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t3_chestplate.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t3_helmet": {
+      "model": "assets/grindcore/models/item/armour_t3_helmet.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t3_helmet.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t3_leggings": {
+      "model": "assets/grindcore/models/item/armour_t3_leggings.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t3_leggings.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t4_boots": {
+      "model": "assets/grindcore/models/item/armour_t4_boots.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t4_boots.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t4_chestplate": {
+      "model": "assets/grindcore/models/item/armour_t4_chestplate.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t4_chestplate.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t4_helmet": {
+      "model": "assets/grindcore/models/item/armour_t4_helmet.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t4_helmet.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armour_t4_leggings": {
+      "model": "assets/grindcore/models/item/armour_t4_leggings.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/armour_t4_leggings.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "armourers_forge": {
+      "model": "assets/grindcore/models/item/armourers_forge.json",
+      "textures": [
+        "assets/grindcore/textures/item/workstations/armourers_forge.png"
+      ],
+      "source": "armourers_forge (new)"
+    },
+    "artisan_bread": {
+      "model": "assets/grindcore/models/item/artisan_bread.json",
+      "textures": [
+        "assets/grindcore/textures/item/artisan_bread.png"
+      ],
+      "source": "combined v1.0.0"
+    },
+    "ash_core": {
+      "model": "assets/grindcore/models/item/ash_core.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/ash_core.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "bakers_table": {
+      "model": "assets/grindcore/models/item/bakers_table.json",
+      "textures": [
+        "assets/grindcore/textures/item/workstations/bakers_table.png"
+      ],
+      "source": "combined v1.0.0"
+    },
+    "blighted_bone": {
+      "model": "assets/grindcore/models/item/blighted_bone.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/blighted_bone.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "blighted_vessel": {
+      "model": "assets/grindcore/models/item/blighted_vessel.json",
+      "textures": [
+        "assets/grindcore/textures/item/relics/blighted_vessel.png"
+      ],
+      "source": "boss relics v0.2.0"
+    },
+    "caravan_silk": {
+      "model": "assets/grindcore/models/item/caravan_silk.json",
+      "textures": [
+        "assets/grindcore/textures/item/caravan_silk.png"
+      ],
+      "source": "combined v1.0.0"
+    },
+    "carpenters_bench": {
+      "model": "assets/grindcore/models/item/carpenters_bench.json",
+      "textures": [
+        "assets/grindcore/textures/item/workstations/carpenters_bench.png"
+      ],
+      "source": "workstations phase 2 v0.1.0"
+    },
+    "carrot_broth": {
+      "model": "assets/grindcore/models/item/carrot_broth.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/carrot_broth.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "cindered_skull": {
+      "model": "assets/grindcore/models/item/cindered_skull.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/cindered_skull.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "coal_briquette": {
+      "model": "assets/grindcore/models/item/coal_briquette.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/coal_briquette.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "conductive_assembly": {
+      "model": "assets/grindcore/models/item/conductive_assembly.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/conductive_assembly.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "copper_components": {
+      "model": "assets/grindcore/models/item/copper_components.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/copper_components.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "copper_fittings": {
+      "model": "assets/grindcore/models/item/copper_fittings.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/copper_fittings.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "copper_sword": {
+      "model": "assets/grindcore/models/item/copper_sword.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/copper_sword.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "crown_of_exile": {
+      "model": "assets/grindcore/models/item/crown_of_exile.json",
+      "textures": [
+        "assets/grindcore/textures/item/relics/crown_of_exile.png"
+      ],
+      "source": "boss relics v0.2.0"
+    },
+    "crownmeal": {
+      "model": "assets/grindcore/models/item/crownmeal.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/crownmeal.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "crownpetal": {
+      "model": "assets/grindcore/models/item/crownpetal.json",
+      "textures": [
+        "assets/grindcore/textures/item/herbs/crownpetal.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "duskshade": {
+      "model": "assets/grindcore/models/item/duskshade.json",
+      "textures": [
+        "assets/grindcore/textures/item/herbs/duskshade.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "embercap": {
+      "model": "assets/grindcore/models/item/embercap.json",
+      "textures": [
+        "assets/grindcore/textures/item/herbs/embercap.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "embercap_meal": {
+      "model": "assets/grindcore/models/item/embercap_meal.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/embercap_meal.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "exiled_sovereign_egg": {
+      "model": "assets/grindcore/models/item/exiled_sovereign_egg.json",
+      "textures": [
+        "assets/grindcore/textures/item/eggs/exiled_sovereign_egg.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "feathered_crest": {
+      "model": "assets/grindcore/models/item/feathered_crest.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/feathered_crest.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "field_bandage": {
+      "model": "assets/grindcore/models/item/field_bandage.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/field_bandage.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "fieldmint": {
+      "model": "assets/grindcore/models/item/fieldmint.json",
+      "textures": [
+        "assets/grindcore/textures/item/herbs/fieldmint.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "flour": {
+      "model": "assets/grindcore/models/item/flour.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/flour.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "foraging_sickle": {
+      "model": "assets/grindcore/models/item/foraging_sickle.json",
+      "textures": [
+        "assets/grindcore/textures/item/tools/foraging_sickle.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t1_birch_logs": {
+      "model": "assets/grindcore/models/item/forest_t1_birch_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t1_birch_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t1_oak_logs": {
+      "model": "assets/grindcore/models/item/forest_t1_oak_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t1_oak_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t2_mangrove_logs": {
+      "model": "assets/grindcore/models/item/forest_t2_mangrove_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t2_mangrove_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t2_oak_logs": {
+      "model": "assets/grindcore/models/item/forest_t2_oak_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t2_oak_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t2_spruce_logs": {
+      "model": "assets/grindcore/models/item/forest_t2_spruce_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t2_spruce_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t3_oak_logs": {
+      "model": "assets/grindcore/models/item/forest_t3_oak_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t3_oak_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t3_spruce_logs": {
+      "model": "assets/grindcore/models/item/forest_t3_spruce_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t3_spruce_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t4_dark_oak_logs": {
+      "model": "assets/grindcore/models/item/forest_t4_dark_oak_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t4_dark_oak_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t4_oak_logs": {
+      "model": "assets/grindcore/models/item/forest_t4_oak_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t4_oak_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forest_t4_pale_oak_logs": {
+      "model": "assets/grindcore/models/item/forest_t4_pale_oak_logs.json",
+      "textures": [
+        "assets/grindcore/textures/item/forestry/forest_t4_pale_oak_logs.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "forestry_axe": {
+      "model": "assets/grindcore/models/item/forestry_axe.json",
+      "textures": [
+        "assets/grindcore/textures/item/tools/forestry_axe.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "gemmed_core": {
+      "model": "assets/grindcore/models/item/gemmed_core.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/gemmed_core.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "gilded_fittings": {
+      "model": "assets/grindcore/models/item/gilded_fittings.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/gilded_fittings.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "gilded_sword": {
+      "model": "assets/grindcore/models/item/gilded_sword.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/gilded_sword.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "hardened_grip": {
+      "model": "assets/grindcore/models/item/hardened_grip.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/hardened_grip.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "hardened_timber": {
+      "model": "assets/grindcore/models/item/hardened_timber.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/hardened_timber.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "heartroot": {
+      "model": "assets/grindcore/models/item/heartroot.json",
+      "textures": [
+        "assets/grindcore/textures/item/herbs/heartroot.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "heartroot_wrap": {
+      "model": "assets/grindcore/models/item/heartroot_wrap.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/heartroot_wrap.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "hearty_stew": {
+      "model": "assets/grindcore/models/item/hearty_stew.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/hearty_stew.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "iron_fittings": {
+      "model": "assets/grindcore/models/item/iron_fittings.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/iron_fittings.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "iron_sword": {
+      "model": "assets/grindcore/models/item/iron_sword.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/iron_sword.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "ironbloom": {
+      "model": "assets/grindcore/models/item/ironbloom.json",
+      "textures": [
+        "assets/grindcore/textures/item/herbs/ironbloom.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "ironbloom_meal": {
+      "model": "assets/grindcore/models/item/ironbloom_meal.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/ironbloom_meal.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "marsh_reed": {
+      "model": "assets/grindcore/models/item/marsh_reed.json",
+      "textures": [
+        "assets/grindcore/textures/item/herbs/marsh_reed.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "masons_bench": {
+      "model": "assets/grindcore/models/item/masons_bench.json",
+      "textures": [
+        "assets/grindcore/textures/item/workstations/masons_bench.png"
+      ],
+      "source": "combined v1.0.0"
+    },
+    "mining_pickaxe": {
+      "model": "assets/grindcore/models/item/mining_pickaxe.json",
+      "textures": [
+        "assets/grindcore/textures/item/tools/mining_pickaxe.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "minion_farming": {
+      "model": "assets/grindcore/models/item/minion_farming.json",
+      "textures": [
+        "assets/grindcore/textures/item/automatons/minion_farming.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "minion_forestry": {
+      "model": "assets/grindcore/models/item/minion_forestry.json",
+      "textures": [
+        "assets/grindcore/textures/item/automatons/minion_forestry.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "minion_mining": {
+      "model": "assets/grindcore/models/item/minion_mining.json",
+      "textures": [
+        "assets/grindcore/textures/item/automatons/minion_mining.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "minion_slaying": {
+      "model": "assets/grindcore/models/item/minion_slaying.json",
+      "textures": [
+        "assets/grindcore/textures/item/automatons/minion_slaying.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "molten_core": {
+      "model": "assets/grindcore/models/item/molten_core.json",
+      "textures": [
+        "assets/grindcore/textures/item/relics/molten_core.png"
+      ],
+      "source": "boss relics v0.2.0"
+    },
+    "molten_residue": {
+      "model": "assets/grindcore/models/item/molten_residue.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/molten_residue.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "obsidian_colossus_egg": {
+      "model": "assets/grindcore/models/item/obsidian_colossus_egg.json",
+      "textures": [
+        "assets/grindcore/textures/item/eggs/obsidian_colossus_egg.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "pasture_guardian_egg": {
+      "model": "assets/grindcore/models/item/pasture_guardian_egg.json",
+      "textures": [
+        "assets/grindcore/textures/item/eggs/pasture_guardian_egg.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "pasture_hide": {
+      "model": "assets/grindcore/models/item/pasture_hide.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/pasture_hide.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "pasture_tusk": {
+      "model": "assets/grindcore/models/item/pasture_tusk.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/pasture_tusk.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "plague_ichor": {
+      "model": "assets/grindcore/models/item/plague_ichor.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/plague_ichor.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "plaguebringer_egg": {
+      "model": "assets/grindcore/models/item/plaguebringer_egg.json",
+      "textures": [
+        "assets/grindcore/textures/item/eggs/plaguebringer_egg.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "provision_pack": {
+      "model": "assets/grindcore/models/item/provision_pack.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/provision_pack.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "reinforced_cloth": {
+      "model": "assets/grindcore/models/item/reinforced_cloth.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/reinforced_cloth.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "reinforced_cobblestone": {
+      "model": "assets/grindcore/models/item/reinforced_cobblestone.json",
+      "textures": [
+        "assets/grindcore/textures/item/reinforced_cobblestone.png"
+      ],
+      "source": "combined v1.0.0"
+    },
+    "reinforced_components": {
+      "model": "assets/grindcore/models/item/reinforced_components.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/reinforced_components.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "reinforced_frame": {
+      "model": "assets/grindcore/models/item/reinforced_frame.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/reinforced_frame.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "seasoned_timber": {
+      "model": "assets/grindcore/models/item/seasoned_timber.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/seasoned_timber.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "shulker_carapace": {
+      "model": "assets/grindcore/models/item/shulker_carapace.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/shulker_carapace.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "smiths_forge": {
+      "model": "assets/grindcore/models/item/smiths_forge.json",
+      "textures": [
+        "assets/grindcore/textures/item/workstations/smiths_forge.png"
+      ],
+      "source": "workstations phase 2 v0.1.0"
+    },
+    "sovereign_grip": {
+      "model": "assets/grindcore/models/item/sovereign_grip.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/sovereign_grip.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "sovereign_sword": {
+      "model": "assets/grindcore/models/item/sovereign_sword.json",
+      "textures": [
+        "assets/grindcore/textures/item/gear/sovereign_sword.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "summoners_altar": {
+      "model": "assets/grindcore/models/item/summoners_altar.json",
+      "textures": [
+        "assets/grindcore/textures/item/workstations/summoners_altar.png"
+      ],
+      "source": "workstations phase 2 v0.1.0"
+    },
+    "treated_timber": {
+      "model": "assets/grindcore/models/item/treated_timber.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/treated_timber.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "verdant_heart": {
+      "model": "assets/grindcore/models/item/verdant_heart.json",
+      "textures": [
+        "assets/grindcore/textures/item/relics/verdant_heart.png"
+      ],
+      "source": "boss relics v0.2.0"
+    },
+    "void_shard": {
+      "model": "assets/grindcore/models/item/void_shard.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/void_shard.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "warding_wrap": {
+      "model": "assets/grindcore/models/item/warding_wrap.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/warding_wrap.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "weapon_grip": {
+      "model": "assets/grindcore/models/item/weapon_grip.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/weapon_grip.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "weavers_loom": {
+      "model": "assets/grindcore/models/item/weavers_loom.json",
+      "textures": [
+        "assets/grindcore/textures/item/workstations/weavers_loom.png"
+      ],
+      "source": "combined v1.0.0"
+    },
+    "webbed_heart": {
+      "model": "assets/grindcore/models/item/webbed_heart.json",
+      "textures": [
+        "assets/grindcore/textures/item/drops/webbed_heart.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "wild_fiber": {
+      "model": "assets/grindcore/models/item/wild_fiber.json",
+      "textures": [
+        "assets/grindcore/textures/item/herbs/wild_fiber.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "wooden_framework": {
+      "model": "assets/grindcore/models/item/wooden_framework.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/wooden_framework.png"
+      ],
+      "source": "sprite (new)"
+    },
+    "woven_cloth": {
+      "model": "assets/grindcore/models/item/woven_cloth.json",
+      "textures": [
+        "assets/grindcore/textures/item/parts/woven_cloth.png"
+      ],
+      "source": "sprite (new)"
+    }
+  }
+}

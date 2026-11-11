@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "grindcore:item/forestry/forest_t2_oak_logs"
+  }
+}

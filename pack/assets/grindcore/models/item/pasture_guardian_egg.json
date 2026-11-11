@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "grindcore:item/eggs/pasture_guardian_egg"
+  }
+}

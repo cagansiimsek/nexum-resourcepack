@@ -1,0 +1,18 @@
+{
+  "pack": {
+    "description": "SkyGrind Combined Assets v2.0.0 | Java 1.21.4–1.21.11 | items, workstations, relics",
+    "pack_format": 46,
+    "supported_formats": [
+      46,
+      75
+    ],
+    "min_format": [
+      46,
+      0
+    ],
+    "max_format": [
+      75,
+      0
+    ]
+  }
+}
