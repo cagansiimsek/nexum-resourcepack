@@ -2,7 +2,7 @@
 
 The Java Edition resource pack for the SkyGrind (Nexum) server: custom item and block looks for GrindCore items.
 
-- **Version:** 2.2.0 (2026-11-13), Minecraft Java 1.21.4 to 1.21.11 (pack format 46 to 75)
+- **Version:** 2.3.0 (2026-11-14), Minecraft Java 1.21.4 to 1.21.11 (pack format 46 to 75)
 - **Contents:** 109 looks. 13 carried over unchanged (artisan bread, reinforced cobblestone, caravan silk, the Baker, Mason and Weaver benches, the boss relics, the Smith and Carpenter benches, the Summoner's Altar) and 96 new (the Armourer's Forge 3D model and 95 flat 32x32 item sprites). Added since: the Automaton skin (v2.1.0, an entity texture) and four 3D profession spirit pet models (v2.2.0: `spirit_wheat_sprite`, `spirit_ore_golem`, `spirit_wood_owl`, `spirit_forage_fox`, each a cube model of about 10 units with its own 64x64 texture).
 - **Model keys:** every look is named after its GrindCore item id, for example `grindcore:forest_t1_oak_logs`. The server sets it with `model: grindcore:<id>` in `items.yml`.
 - **Not covered:** Bedrock (Geyser) players; they need a separate pack.
@@ -22,7 +22,7 @@ Put `releases/SkyGrind-Combined-Assets-1.21.4-1.21.11-v2.2.0.zip` in your resour
 2. In `server.properties`: `resource-pack=<that link>`, `resource-pack-sha1=<the SHA-1 of the ZIP>`, optionally `resource-pack-prompt` and `require-resource-pack=true`. Restart the server.
 3. A new version gets a new tag, a new link and a new SHA-1. The file name carries the version, so players never keep a stale copy.
 
-SHA-1 of the 2.2.0 ZIP: `fbb372f904127c62e467ec122bc07449b27feae1` (the 2.0.0 ZIP was `f69d80bbc332d23badcb7a276d8082b976483ade`)
+SHA-1 of the 2.3.0 ZIP: `88f257eeddb5cdc3bc6d40c15dae834f84f3ae1a` (2.2.0 was `fbb372f904127c62e467ec122bc07449b27feae1`; the 2.0.0 ZIP was `f69d80bbc332d23badcb7a276d8082b976483ade`)
 
 ## Layout
 
@@ -34,6 +34,10 @@ SHA-1 of the 2.2.0 ZIP: `fbb372f904127c62e467ec122bc07449b27feae1` (the 2.0.0 ZI
 | `previews/sprites/` | one preview PNG per sprite |
 | `previews/spirits/` | isometric previews of the four spirits (`previews/spirits.png` is the sheet) |
 | `docs/` | the build report and validation record |
+
+## Forage Bush (2.3.0)
+
+The one block look in the pack: `assets/minecraft/blockstates/flowering_azalea.json` points the vanilla block `minecraft:flowering_azalea` at `grindcore:block/forage_bush` (a leafy mound on a short trunk with gold, teal and violet berries; `tools/forage_bush.js` draws it, `tools/build_v2_3.py` builds the ZIP, preview `previews/forage_bush.png`). The server shows that block at every foraging spot of the Forestry islands. Side effect: every flowering azalea anywhere on the server looks like this bush.
 
 ## Notes
 
