@@ -12,10 +12,15 @@ Contents
   2026-11-12 texture needs list. The model key of each new sprite equals its GrindCore item id:
   `grindcore:<item id>`, e.g. `grindcore:forest_t1_oak_logs`, `grindcore:minion_mining`.
 
+- Added in v2.1.0: the Automaton skin (textures/entity/automaton.png). Added in v2.2.0: four profession spirit pet
+  models, `grindcore:spirit_wheat_sprite`, `spirit_ore_golem`, `spirit_wood_owl`, `spirit_forage_fox` (3D cube models,
+  about 10 units, face towards north, one 64x64 texture each; drawn by tools/spirits.js). Current release: v2.2.0.
+
 Quick look in a creative test world:
 /give @s minecraft:paper[minecraft:item_model="grindcore:forest_t1_oak_logs"] 1
 /give @s minecraft:paper[minecraft:item_model="grindcore:minion_mining"] 1
 /give @s minecraft:paper[minecraft:item_model="grindcore:armourers_forge"] 1
+/give @s minecraft:paper[minecraft:item_model="grindcore:spirit_wood_owl"] 1
 
 Visuals only: no items, recipes, behaviour or vanilla textures are changed. Armour sprites change the inventory
 and hand icon only; worn armour keeps its vanilla look. Bedrock/Geyser is not covered.
