@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "grindcore:skin_aether_core_flow"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "grindcore:skin_aether_core_flow"
+      }
+    ]
+  }
+}

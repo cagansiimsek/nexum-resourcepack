@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "grindcore:skin_ash_pale_border"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "grindcore:skin_ash_pale_border"
+      }
+    ]
+  }
+}
