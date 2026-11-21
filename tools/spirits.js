@@ -1,4 +1,6 @@
-// Draws the four "profession spirit" pet models (pack v2.2.0): wheat_sprite, ore_golem, wood_owl, forage_fox.
+// Draws the four "profession spirit" pet models (pack v2.2.0): wheat_sprite, ore_golem, wood_owl, forage_fox,
+// and the eight v3.58 spirits (pack v2.6.0): harvest_hare, gem_beetle, bark_squirrel, petal_moth, battle_hound, bounty_raven,
+// ember_drake, golden_dragon.
 // Each spirit is a small cube model (about 10 units, centred on 8,8,8, face towards NORTH) with one 64x64 texture.
 // Deterministic: fixed seed, no dates. Also renders isometric previews with a tiny software renderer.
 // Usage: node tools/spirits.js   (writes textures, models, item definitions and previews)
@@ -271,10 +273,169 @@ const spirits = [];
   });
 }
 
+// ---------- pack v2.6.0: the eight v3.58 spirits (appended AFTER the first four, so their textures stay byte for byte) ----------
+const dots2 = (ox, oy, c) => [['n', ox, oy, 1, 1, c, true], ['n', ox + 3, oy, 1, 1, c, true]];
+
+// 5. Harvest hare (Farming tokens): sandy rabbit, tall pink-lined ears, cream belly, holds a carrot
+{
+  const FUR = hex('#C9A27C'), FD = hex('#9C7A57'), CR = hex('#F1E4CF'), PK = hex('#E9A2AB'), CA = hex('#EA8A2C'), LF = hex('#5FA83A');
+  spirits.push({
+    id: 'harvest_hare', elements: [
+      E('foot left', [5, 3, 4], [7, 4, 8], { c: CR }),
+      E('foot right', [9, 3, 4], [11, 4, 8], { c: CR }),
+      E('body', [5, 4, 6], [11, 9, 11], { c: FUR, fc: { d: FD }, r: [['n', 1, 1, 4, 4, CR], ['u', 0, 0, 6, 1, FD]] }),
+      E('head', [5.5, 8, 4], [10.5, 12, 8], {
+        c: FUR, r: [...dots2(1, 1, EYE), ['n', 1, 1, 1, 1, EYE, true], ['n', 2, 2, 1, 1, PK, true], ['n', 1, 3, 3, 1, CR], ['ew', 0, 3, 4, 1, CR]],
+      }),
+      E('ear left', [6, 12, 5.5], [7.5, 16, 6.5], { c: FUR, rot: ['z', 22.5, [6.75, 12, 6]], r: [['n', 0, 1, 1, 3, PK], ['u', 0, 0, 2, 1, FD]] }),
+      E('ear right', [8.5, 12, 5.5], [10, 16, 6.5], { c: FUR, rot: ['z', -22.5, [9.25, 12, 6]], r: [['n', 1, 1, 1, 3, PK], ['u', 0, 0, 2, 1, FD]] }),
+      E('tail', [7, 5, 11], [9, 7, 12], { c: CR }),
+      E('carrot', [10, 4, 3], [11.5, 8, 4.5], { c: CA, pat: (f, x, y) => (f !== 'u' && f !== 'd' && y % 2 === 1 && x === 0) ? sh(CA, 0.78) : null }),
+      E('carrot leaves', [10, 8, 3], [11.5, 9.5, 4.5], { c: LF, rot: ['z', -22.5, [10.75, 8, 3.75]] }),
+    ],
+  });
+}
+
+// 6. Gem beetle (Mining tokens): glossy emerald shell with a split line, cyan gem on the back, dark head and six legs
+{
+  const SH = hex('#25B26A'), SD = hex('#157A47'), SL = hex('#8CF0B8'), DK = hex('#1F2629'), GEM = hex('#5FE9E2');
+  const shell = (f, x, y, w, h) => f === 'u' && x === (w >> 1) ? SD : ((f === 'u' && (x + y) % 5 === 0) ? SL : null);
+  const leg = (name, x0, z0) => E(name, [x0, 3, z0], [x0 + 1, 5, z0 + 1], { c: DK });
+  spirits.push({
+    id: 'gem_beetle', elements: [
+      leg('leg front left', 3.5, 6), leg('leg mid left', 3.5, 8.5), leg('leg back left', 3.5, 11),
+      leg('leg front right', 11.5, 6), leg('leg mid right', 11.5, 8.5), leg('leg back right', 11.5, 11),
+      E('shell', [4.5, 4, 6], [11.5, 8, 12.5], { c: SH, fc: { d: DK }, pat: shell, r: [['v', 0, 3, 7, 1, SD], ['n', 1, 0, 2, 1, SL], ['e', 1, 0, 2, 1, SL]] }),
+      E('head', [6, 4, 3.5], [10, 7, 6], { c: DK, r: [['n', 0, 0, 1, 1, GLINT, true], ['n', 3, 0, 1, 1, GLINT, true], ['n', 1, 2, 2, 1, sh(DK, 1.6)]] }),
+      E('horn', [7.5, 6, 3], [8.5, 9, 4], { c: SD, rot: ['x', -22.5, [8, 6, 3.5]], r: [['a', 0, 0, 1, 1, SL]] }),
+      E('gem', [7, 8, 8], [9, 9.5, 10], { c: GEM, r: [['n', 0, 0, 1, 1, lighten(GEM, 0.6), true], ['u', 0, 0, 1, 1, lighten(GEM, 0.6), true]] }),
+    ],
+  });
+}
+
+// 7. Bark squirrel (Forestry tokens): russet squirrel, cream cheeks and belly, big striped tail curling over, holds an acorn
+{
+  const RU = hex('#A35A2C'), RD = hex('#6E3A1C'), CR = hex('#EEDDBE'), AC = hex('#B07A3A'), CAP = hex('#6B4A26');
+  const stripe = (f, x, y) => (f !== 'u' && f !== 'd' && y % 2 === 0) ? lighten(RU, 0.25) : null;
+  spirits.push({
+    id: 'bark_squirrel', elements: [
+      E('foot left', [5, 3, 5], [7, 4, 8], { c: RD }),
+      E('foot right', [9, 3, 5], [11, 4, 8], { c: RD }),
+      E('body', [5.5, 4, 6], [10.5, 9, 10], { c: RU, r: [['n', 1, 1, 3, 4, CR]] }),
+      E('head', [5.5, 9, 4.5], [10.5, 13, 8.5], { c: RU, r: [['n', 1, 1, 1, 1, EYE, true], ['n', 3, 1, 1, 1, EYE, true], ['n', 0, 2, 2, 2, CR], ['n', 3, 2, 2, 2, CR], ['n', 2, 2, 1, 1, RD, true]] }),
+      E('ear left', [6, 13, 6], [7, 14.5, 7], { c: RU, r: [['u', 0, 0, 1, 1, RD]] }),
+      E('ear right', [9, 13, 6], [10, 14.5, 7], { c: RU, r: [['u', 0, 0, 1, 1, RD]] }),
+      E('tail base', [6, 4, 10], [10, 9, 13], { c: RU, pat: stripe }),
+      E('tail top', [6, 9, 11], [10, 13, 14], { c: RU, pat: stripe }),
+      E('tail curl', [6, 12, 9.5], [10, 15, 12], { c: lighten(RU, 0.15), rot: ['x', -22.5, [8, 12, 11]] }),
+      E('acorn', [7, 5, 4], [9, 7, 5.5], { c: AC, r: [['n', 0, 0, 1, 1, lighten(AC, 0.35)]] }),
+      E('acorn cap', [6.75, 7, 3.75], [9.25, 8, 5.75], { c: CAP, pat: (f, x, y) => (x + y) % 2 === 0 ? sh(CAP, 0.8) : null }),
+    ],
+  });
+}
+
+// 8. Petal moth (Foraging tokens): fluffy cream body, big black eyes, feathery antennae, pink wings with rose spots
+{
+  const BO = hex('#F2E3C6'), FU = hex('#FFF6E6'), WG = hex('#F2A3C2'), WD = hex('#C9628C'), WL = hex('#FAD3E3'), AN = hex('#B9875A');
+  const wing = (f, x, y, w, h) => (f === 'n' || f === 's') ? ((x === 0 || y === 0 || x === w - 1 || y === h - 1) ? WD : ((x * 3 + y * 5) % 7 === 0 ? WL : null)) : null;
+  spirits.push({
+    id: 'petal_moth', elements: [
+      E('body', [7, 4, 6], [9, 9, 10], { c: BO, pat: (f, x, y) => (f !== 'u' && f !== 'd' && y % 2 === 1) ? sh(BO, 0.88) : null }),
+      E('fluff', [6.5, 8, 5.5], [9.5, 9.5, 8.5], { c: FU }),
+      E('head', [6.5, 9, 4.5], [9.5, 11.5, 7], { c: FU, r: [['n', 0, 0, 1, 2, EYE, true], ['n', 2, 0, 1, 2, EYE, true], ['n', 0, 0, 1, 1, GLINT, true], ['n', 2, 0, 1, 1, GLINT, true]] }),
+      E('antenna left', [6.5, 11.5, 5], [7.5, 14.5, 6], { c: AN, rot: ['z', 22.5, [7, 11.5, 5.5]], r: [['a', 0, 0, 1, 1, lighten(AN, 0.3)]] }),
+      E('antenna right', [8.5, 11.5, 5], [9.5, 14.5, 6], { c: AN, rot: ['z', -22.5, [9, 11.5, 5.5]], r: [['a', 0, 0, 1, 1, lighten(AN, 0.3)]] }),
+      E('wing upper left', [2, 7, 7], [7, 12, 8], { c: WG, rot: ['y', -22.5, [7, 9.5, 7.5]], pat: wing, r: [['ns', 1, 1, 2, 2, WD]] }),
+      E('wing upper right', [9, 7, 7], [14, 12, 8], { c: WG, rot: ['y', 22.5, [9, 9.5, 7.5]], pat: wing, r: [['ns', 2, 1, 2, 2, WD]] }),
+      E('wing lower left', [3, 4, 7.5], [7, 7.5, 8.5], { c: WL, rot: ['y', -22.5, [7, 6, 8]], pat: wing }),
+      E('wing lower right', [9, 4, 7.5], [13, 7.5, 8.5], { c: WL, rot: ['y', 22.5, [9, 6, 8]], pat: wing }),
+    ],
+  });
+}
+
+// 9. Battle hound (Slaying XP): grey war dog with a red bandana, darker back, scarred muzzle, ears back
+{
+  const GR = hex('#8D8F98'), GD = hex('#5E6069'), GL = hex('#C4C6CC'), RED = hex('#C23B32'), NO = hex('#1E1C1F');
+  const leg = (name, x0, z0) => E(name, [x0, 3, z0], [x0 + 1.5, 5, z0 + 1.5], { c: GD });
+  spirits.push({
+    id: 'battle_hound', elements: [
+      leg('leg front left', 5, 6), leg('leg front right', 9.5, 6), leg('leg back left', 5, 10), leg('leg back right', 9.5, 10),
+      E('body', [5, 5, 6], [11, 9, 12], { c: GR, fc: { u: GD }, r: [['n', 1, 1, 4, 3, GL]] }),
+      E('head', [5.5, 7, 2.5], [10.5, 11.5, 6.5], { c: GR, r: [['n', 1, 1, 1, 1, EYE, true], ['n', 3, 1, 1, 1, EYE, true], ['n', 1, 0, 1, 1, GD], ['n', 3, 0, 1, 1, GD], ['u', 0, 0, 5, 2, GD]] }),
+      E('snout', [6.5, 7, 1], [9.5, 9, 2.5], { c: GL, r: [['n', 1, 0, 1, 1, NO, true], ['n', 0, 1, 3, 1, sh(GL, 0.8)], ['u', 2, 0, 1, 2, hex('#B07A7A')]] }),
+      E('ear left', [5.5, 11.5, 4], [6.5, 13, 5.5], { c: GD, rot: ['x', 22.5, [6, 11.5, 4.75]] }),
+      E('ear right', [9.5, 11.5, 4], [10.5, 13, 5.5], { c: GD, rot: ['x', 22.5, [10, 11.5, 4.75]] }),
+      E('bandana', [4.75, 7.5, 5.75], [11.25, 9, 7], { c: RED, r: [['n', 0, 0, 7, 1, lighten(RED, 0.25)], ['n', 3, 1, 1, 1, GLINT, true]] }),
+      E('tail', [7.5, 8, 12], [8.5, 11.5, 13], { c: GR, rot: ['x', 22.5, [8, 8, 12.5]], r: [['u', 0, 0, 1, 1, GL]] }),
+    ],
+  });
+}
+
+// 10. Bounty raven (Token bonus): blue-black raven, gold eyes, grey beak holding a gold token coin
+{
+  const BK = hex('#2A2733'), BP = hex('#3C3557'), BG = hex('#4E4E58'), GO = hex('#F0C24A'), GOD = hex('#B8862A');
+  const sheen = (f, x, y) => (f !== 'd' && (x + 2 * y) % 5 === 0) ? BP : null;
+  spirits.push({
+    id: 'bounty_raven', elements: [
+      E('foot left', [6, 3, 7], [7, 4, 9], { c: BG }),
+      E('foot right', [9, 3, 7], [10, 4, 9], { c: BG }),
+      E('body', [5, 4, 6], [11, 9, 11], { c: BK, pat: sheen }),
+      E('head', [5.5, 9, 4.5], [10.5, 12.5, 8.5], { c: BK, pat: sheen, r: [['n', 0, 1, 1, 1, GO, true], ['n', 4, 1, 1, 1, GO, true], ['ew', 0, 1, 1, 1, GO, true]] }),
+      E('beak', [7, 9.5, 2.5], [9, 11, 4.5], { c: BG, r: [['u', 0, 0, 2, 1, sh(BG, 0.8)]] }),
+      E('coin', [6.75, 8, 2.25], [9.25, 10.5, 2.75], { c: GO, r: [['ns', 1, 1, 1, 1, GOD, true], ['ns', 0, 0, 1, 1, lighten(GO, 0.5), true]] }),
+      E('wing left', [4, 5, 6.5], [5, 9, 10.5], { c: BK, rot: ['z', -22.5, [5, 9, 8.5]], pat: (f, x, y) => y % 2 === 1 ? BP : null }),
+      E('wing right', [11, 5, 6.5], [12, 9, 10.5], { c: BK, rot: ['z', 22.5, [11, 9, 8.5]], pat: (f, x, y) => y % 2 === 1 ? BP : null }),
+      E('tail', [6.5, 5, 11], [9.5, 6, 14], { c: BK, rot: ['x', 22.5, [8, 5.5, 11]], pat: (f, x) => x % 2 === 0 ? BP : null }),
+    ],
+  });
+}
+
+// 11. Ember drake (Epic/Legendary, Slaying damage): red little dragon, glowing orange belly, cream horns, raised wings, flame tail
+{
+  const RD = hex('#B3321F'), RK = hex('#7A1F14'), OR = hex('#F28A2E'), YE = hex('#FFD24A'), HN = hex('#E9D8B0');
+  const leg = (name, x0, z0) => E(name, [x0, 3, z0], [x0 + 1.5, 5, z0 + 2], { c: RK });
+  const scales = (f, x, y) => (f !== 'd' && (x + y) % 3 === 0) ? sh(RD, 0.85) : null;
+  spirits.push({
+    id: 'ember_drake', elements: [
+      leg('leg front left', 5.5, 6), leg('leg front right', 9, 6), leg('leg back left', 5.5, 9.5), leg('leg back right', 9, 9.5),
+      E('body', [5, 5, 6], [11, 9, 12], { c: RD, fc: { d: OR }, pat: scales, r: [['n', 1, 0, 4, 4, OR], ['n', 2, 1, 2, 2, YE]] }),
+      E('head', [6, 8, 3], [10, 11.5, 7], { c: RD, pat: scales, r: [['n', 0, 1, 1, 1, YE, true], ['n', 3, 1, 1, 1, YE, true], ['n', 1, 3, 2, 1, RK], ['ew', 0, 1, 1, 1, YE, true]] }),
+      E('horn left', [6.5, 11, 5], [7.5, 13.5, 6], { c: HN, rot: ['x', 22.5, [7, 11, 5.5]] }),
+      E('horn right', [8.5, 11, 5], [9.5, 13.5, 6], { c: HN, rot: ['x', 22.5, [9, 11, 5.5]] }),
+      E('wing left', [1.5, 9, 6.5], [5, 10, 11], { c: RK, rot: ['z', -22.5, [5, 9.5, 8.75]], pat: (f, x) => f === 'u' && x % 2 === 0 ? OR : null }),
+      E('wing right', [11, 9, 6.5], [14.5, 10, 11], { c: RK, rot: ['z', 22.5, [11, 9.5, 8.75]], pat: (f, x) => f === 'u' && x % 2 === 1 ? OR : null }),
+      E('tail', [7, 6, 12], [9, 8, 15], { c: RD, pat: scales }),
+      E('tail flame', [7, 6.5, 15], [9, 9, 16], { c: OR, r: [['a', 0, 0, 2, 1, YE, true]] }),
+    ],
+  });
+}
+
+// 12. Golden dragon (Epic/Legendary, sell money): sitting gold dragon, cream belly, emerald eyes, pale wings, on a small coin stack
+{
+  const GO = hex('#E4B22E'), GD = hex('#A87A16'), CR = hex('#F6E7B8'), EM = hex('#2FD07A'), WM = hex('#F3DC8C'), CO = hex('#F7CF57');
+  const scales = (f, x, y) => (f !== 'd' && (x * 2 + y) % 4 === 0) ? sh(GO, 0.86) : null;
+  spirits.push({
+    id: 'golden_dragon', elements: [
+      E('coins', [4.5, 3, 4.5], [11.5, 4, 11.5], { c: CO, pat: (f, x, y) => (x + y) % 3 === 0 ? sh(CO, 0.8) : null }),
+      E('foot left', [5.5, 4, 5], [7.5, 5, 7.5], { c: GD }),
+      E('foot right', [8.5, 4, 5], [10.5, 5, 7.5], { c: GD }),
+      E('body', [5.5, 4.5, 6.5], [10.5, 10, 10.5], { c: GO, pat: scales, r: [['n', 1, 0, 3, 5, CR], ['n', 1, 1, 3, 1, sh(CR, 0.88)], ['n', 1, 3, 3, 1, sh(CR, 0.88)]] }),
+      E('head', [5.5, 10, 4.5], [10.5, 13.5, 8.5], { c: GO, pat: scales, r: [['n', 1, 1, 1, 1, EM, true], ['n', 3, 1, 1, 1, EM, true], ['ew', 0, 1, 1, 1, EM, true]] }),
+      E('snout', [6.5, 10, 3], [9.5, 12, 4.5], { c: GO, r: [['n', 0, 0, 1, 1, GD, true], ['n', 2, 0, 1, 1, GD, true], ['n', 0, 1, 3, 1, CR]] }),
+      E('horn left', [6, 13, 6.5], [7, 15.5, 7.5], { c: CR, rot: ['x', 22.5, [6.5, 13, 7]], r: [['u', 0, 0, 1, 1, GD]] }),
+      E('horn right', [9, 13, 6.5], [10, 15.5, 7.5], { c: CR, rot: ['x', 22.5, [9.5, 13, 7]], r: [['u', 0, 0, 1, 1, GD]] }),
+      E('wing left', [2, 7.5, 9.5], [6, 13, 10.5], { c: WM, rot: ['z', 22.5, [6, 8, 10]], pat: (f, x, y, w, h) => (f === 'n' || f === 's') && (x === 0 || y === 0) ? GD : null }),
+      E('wing right', [10, 7.5, 9.5], [14, 13, 10.5], { c: WM, rot: ['z', -22.5, [10, 8, 10]], pat: (f, x, y, w, h) => (f === 'n' || f === 's') && (x === w - 1 || y === 0) ? GD : null }),
+      E('tail', [7, 4, 10.5], [9, 6, 14.5], { c: GO, pat: scales, r: [['u', 0, 0, 2, 1, CR]] }),
+    ],
+  });
+}
+
 // ---------- write everything ----------
 const P = p => path.join(ROOT, p);
 for (const d of ['pack/assets/grindcore/textures/item', 'pack/assets/grindcore/models/item', 'pack/assets/grindcore/items', 'previews/spirits']) fs.mkdirSync(P(d), { recursive: true });
-const sheet = new Uint8Array(VW * 4 * VH * 2 * 4);
+const SHEET_ROWS = Math.ceil(spirits.length / 4) * 2; // 4 spirits per row, two views each (v2.6.0: 12 spirits, 6 rows)
+const sheet = new Uint8Array(VW * 4 * VH * SHEET_ROWS * 4);
 spirits.forEach((sp, i) => {
   buildSpirit(sp);
   fs.writeFileSync(P(`pack/assets/grindcore/textures/item/spirit_${sp.id}.png`), png(TS, TS, sp.px));
@@ -284,12 +445,12 @@ spirits.forEach((sp, i) => {
   VIEWS.forEach((cam, v) => {
     const img = renderView(sp, cam, VW, VH, 16, 2);
     blit(prev, VW * 2, img, VW, VH, v * VW, 0);
-    blit(sheet, VW * 4, img, VW, VH, i * VW, v * VH);
+    blit(sheet, VW * 4, img, VW, VH, (i % 4) * VW, (Math.floor(i / 4) * 2 + v) * VH);
   });
   fs.writeFileSync(P(`previews/spirits/spirit_${sp.id}.png`), png(VW * 2, VH, prev));
   console.log(sp.id, sp.elements.length, 'elements');
 });
-fs.writeFileSync(P('previews/spirits.png'), png(VW * 4, VH * 2, sheet));
+fs.writeFileSync(P('previews/spirits.png'), png(VW * 4, VH * SHEET_ROWS, sheet));
 
 // ---------- validation ----------
 let bad = 0;

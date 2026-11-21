@@ -1,0 +1,42 @@
+{
+  "base": "SkyGrind-Combined-Assets-1.21.4-1.21.11-v2.5.0.zip",
+  "base_sha1": "4e44ed9f73cebdf6b75a4028198477665d331018",
+  "base_entries": 5571,
+  "pack": "SkyGrind-Combined-Assets-1.21.4-1.21.11-v2.6.0.zip",
+  "pack_entries": 5595,
+  "pack_bytes": 2361947,
+  "pack_sha1": "9297b3ee4c3a1241068d2bb314f8834993f74999",
+  "added": [
+    "assets/grindcore/items/spirit_harvest_hare.json",
+    "assets/grindcore/models/item/spirit_harvest_hare.json",
+    "assets/grindcore/textures/item/spirit_harvest_hare.png",
+    "assets/grindcore/items/spirit_gem_beetle.json",
+    "assets/grindcore/models/item/spirit_gem_beetle.json",
+    "assets/grindcore/textures/item/spirit_gem_beetle.png",
+    "assets/grindcore/items/spirit_bark_squirrel.json",
+    "assets/grindcore/models/item/spirit_bark_squirrel.json",
+    "assets/grindcore/textures/item/spirit_bark_squirrel.png",
+    "assets/grindcore/items/spirit_petal_moth.json",
+    "assets/grindcore/models/item/spirit_petal_moth.json",
+    "assets/grindcore/textures/item/spirit_petal_moth.png",
+    "assets/grindcore/items/spirit_battle_hound.json",
+    "assets/grindcore/models/item/spirit_battle_hound.json",
+    "assets/grindcore/textures/item/spirit_battle_hound.png",
+    "assets/grindcore/items/spirit_bounty_raven.json",
+    "assets/grindcore/models/item/spirit_bounty_raven.json",
+    "assets/grindcore/textures/item/spirit_bounty_raven.png",
+    "assets/grindcore/items/spirit_ember_drake.json",
+    "assets/grindcore/models/item/spirit_ember_drake.json",
+    "assets/grindcore/textures/item/spirit_ember_drake.png",
+    "assets/grindcore/items/spirit_golden_dragon.json",
+    "assets/grindcore/models/item/spirit_golden_dragon.json",
+    "assets/grindcore/textures/item/spirit_golden_dragon.png"
+  ],
+  "changed": [
+    "pack.mcmeta"
+  ],
+  "checks": [
+    "every added JSON parses; every texture is a 64x64 PNG; every item names its model and every model its texture",
+    "5570 of 5571 v2.5.0 entries are byte for byte identical in v2.6.0; the only changed entry is pack.mcmeta"
+  ]
+}
