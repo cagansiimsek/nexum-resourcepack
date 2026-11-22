@@ -1,0 +1,10 @@
+{
+  "base": "SkyGrind-Combined-Assets-1.21.4-1.21.11-v2.9.0.zip",
+  "pack": "SkyGrind-Combined-Assets-1.21.4-1.21.11-v2.10.0.zip",
+  "entries": 7121,
+  "bettermodel_old": 6649,
+  "bettermodel_new": 6652,
+  "changed_outside_bettermodel": [],
+  "bytes": 7017550,
+  "sha1": "a075c186544d7f0cdc1d5a05be54dd46cb5f31c8"
+}
