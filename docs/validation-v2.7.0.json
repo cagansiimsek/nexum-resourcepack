@@ -1,0 +1,21 @@
+{
+  "base": "SkyGrind-Combined-Assets-1.21.4-1.21.11-v2.6.0.zip",
+  "base_sha1": "9297b3ee4c3a1241068d2bb314f8834993f74999",
+  "base_entries": 5595,
+  "pack": "SkyGrind-Combined-Assets-1.21.4-1.21.11-v2.7.0.zip",
+  "pack_entries": 5598,
+  "pack_bytes": 2365780,
+  "pack_sha1": "b74cabcd45f1e765eba56f65f95578697732cedb",
+  "added": [
+    "assets/grindcore/items/spirit_fortune_phoenix.json",
+    "assets/grindcore/models/item/spirit_fortune_phoenix.json",
+    "assets/grindcore/textures/item/spirit_fortune_phoenix.png"
+  ],
+  "changed": [
+    "pack.mcmeta"
+  ],
+  "checks": [
+    "every added JSON parses; every texture is a 64x64 PNG; every item names its model and every model its texture",
+    "5594 of 5595 v2.6.0 entries are byte for byte identical in v2.7.0; the only changed entry is pack.mcmeta"
+  ]
+}

@@ -1,6 +1,6 @@
 // Draws the four "profession spirit" pet models (pack v2.2.0): wheat_sprite, ore_golem, wood_owl, forage_fox,
 // and the eight v3.58 spirits (pack v2.6.0): harvest_hare, gem_beetle, bark_squirrel, petal_moth, battle_hound, bounty_raven,
-// ember_drake, golden_dragon.
+// ember_drake, golden_dragon, and the ninth (pack v2.7.0): fortune_phoenix.
 // Each spirit is a small cube model (about 10 units, centred on 8,8,8, face towards NORTH) with one 64x64 texture.
 // Deterministic: fixed seed, no dates. Also renders isometric previews with a tiny software renderer.
 // Usage: node tools/spirits.js   (writes textures, models, item definitions and previews)
@@ -431,10 +431,35 @@ const dots2 = (ox, oy, c) => [['n', ox, oy, 1, 1, c, true], ['n', ox + 3, oy, 1,
   });
 }
 
+// 13. Fortune phoenix (Epic/Legendary, enchant chance; pack v2.7.0): an upright fire bird on a gold perch, crimson body with a
+// golden breast, flame wings raised, a gold crest and three long tail plumes with yellow tips. Drawn after all the others, so the
+// textures of the first twelve spirits stay byte for byte the same.
+{
+  const CRI = hex('#C8281E'), DK = hex('#7E1712'), FL = hex('#F5762A'), YE = hex('#FFD84A'), GO = hex('#E4B22E'), GD = hex('#A87A16'), EY = hex('#2B1A10');
+  const feathers = (f, x, y) => (f !== 'd' && (x + 2 * y) % 4 === 0) ? sh(CRI, 0.84) : null;
+  const flame = (f, x, y, w, h) => (f === 'n' || f === 's' || f === 'u') ? (y < h / 3 ? YE : y < (2 * h) / 3 ? FL : null) : null;
+  spirits.push({
+    id: 'fortune_phoenix', elements: [
+      E('perch', [4, 3, 7], [12, 4, 8.5], { c: GO, pat: (f, x) => x % 3 === 0 ? GD : null }),
+      E('foot left', [6.5, 4, 6.5], [7.5, 5, 8.5], { c: GD }),
+      E('foot right', [8.5, 4, 6.5], [9.5, 5, 8.5], { c: GD }),
+      E('body', [6, 5, 6], [10, 10.5, 10], { c: CRI, pat: feathers, r: [['n', 1, 1, 2, 4, GO], ['n', 1, 2, 2, 1, YE]] }),
+      E('head', [6.5, 10.5, 5.5], [9.5, 13.5, 8.5], { c: CRI, pat: feathers, r: [['n', 0, 1, 1, 1, EY, true], ['n', 2, 1, 1, 1, EY, true], ['ew', 1, 1, 1, 1, EY, true]] }),
+      E('beak', [7.5, 11, 4.5], [8.5, 12, 5.5], { c: GO, r: [['d', 0, 0, 1, 1, GD]] }),
+      E('crest', [7.5, 13.5, 6], [8.5, 16, 8], { c: GO, rot: ['x', -22.5, [8, 13.5, 7]], r: [['a', 0, 0, 1, 1, YE, true]] }),
+      E('wing left', [2.5, 8, 7], [6, 14, 8.5], { c: FL, rot: ['z', 22.5, [6, 8.5, 7.75]], pat: flame }),
+      E('wing right', [10, 8, 7], [13.5, 14, 8.5], { c: FL, rot: ['z', -22.5, [10, 8.5, 7.75]], pat: flame }),
+      E('tail left', [6.5, 3, 10], [7.5, 7, 14], { c: DK, rot: ['x', 22.5, [7, 6, 10]], r: [['u', 0, 2, 1, 2, YE], ['s', 0, 2, 1, 2, YE]] }),
+      E('tail middle', [7.5, 2.5, 10], [8.5, 7, 15], { c: CRI, rot: ['x', 22.5, [8, 6, 10]], r: [['u', 0, 3, 1, 2, YE], ['s', 0, 2, 1, 2, YE]] }),
+      E('tail right', [8.5, 3, 10], [9.5, 7, 14], { c: DK, rot: ['x', 22.5, [9, 6, 10]], r: [['u', 0, 2, 1, 2, YE], ['s', 0, 2, 1, 2, YE]] }),
+    ],
+  });
+}
+
 // ---------- write everything ----------
 const P = p => path.join(ROOT, p);
 for (const d of ['pack/assets/grindcore/textures/item', 'pack/assets/grindcore/models/item', 'pack/assets/grindcore/items', 'previews/spirits']) fs.mkdirSync(P(d), { recursive: true });
-const SHEET_ROWS = Math.ceil(spirits.length / 4) * 2; // 4 spirits per row, two views each (v2.6.0: 12 spirits, 6 rows)
+const SHEET_ROWS = Math.ceil(spirits.length / 4) * 2; // 4 spirits per row, two views each (v2.7.0: 13 spirits, 8 rows)
 const sheet = new Uint8Array(VW * 4 * VH * SHEET_ROWS * 4);
 spirits.forEach((sp, i) => {
   buildSpirit(sp);
